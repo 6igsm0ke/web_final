@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sham School Login</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <div class="center-wrapper">
-    <div class="logo-login">
-      
-      <div class="logo-side">
-        <img src="pictures/logo-white.png" alt="Sham School Logo" class="logo-icon" />
-      </div>
-
-      <div class="login-box">
-        <h2>Welcome</h2>
-        <p>Please sign in to continue</p>
-
-        <div class="social-login">
-          <button class="google-button"><i class="fab fa-google"></i></button>
-          <button class="facebook-button"><i class="fab fa-facebook-f"></i></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sham School Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="center-wrapper">
+      <div class="logo-login">
+        <div class="logo-side hidden">
+          <img
+            src="pictures/logo-white.png"
+            alt="Sham School Logo"
+            class="logo-icon"
+          />
         </div>
 
-        <form action="homePage.html" method="GET">
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" required />
+        <div class="login-box hidden">
+          <h2>Welcome</h2>
+          <p>Please sign in to continue</p>
 
-          <label>Password</label>
-          <input type="password" placeholder="Enter your password" required />
+          <div class="social-login">
+            <button class="google-button"><i class="fab fa-google"></i></button>
+            <button class="facebook-button">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </div>
 
-          <button type="submit" class="submit-button">Submit</button>
-        </form>
+          <form action="homePage.html" method="GET">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required />
 
-        <div class="forgot-password">
-          <a href="#">Forgot password?</a>
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required />
+
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
         </div>
       </div>
-      
     </div>
-  </div>
-  <script src="signup.js"></script>
-</body>
+    <script src="signup.js"></script>
+  </body>
 </html>

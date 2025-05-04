@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background: rgba(30, 30, 30, 0.6); /* semi-transparent */
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(3px);
-  background-image: url('pictures/bg1.png');
+  background-image: url("pictures/bg1.png");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -29,7 +29,7 @@ body {
   display: flex;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   max-width: 900px;
   width: 100%;
@@ -46,6 +46,17 @@ body {
 
 .logo-icon {
   max-width: 200px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .login-box {
