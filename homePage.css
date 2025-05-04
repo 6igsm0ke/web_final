@@ -6,7 +6,11 @@
 }
 
 body {
-  background: #fff;
+  background-color: white;
+  /* background-image: url('pictures/bg1.png'); 
+  background-size: cover;      
+  background-repeat: no-repeat; 
+  background-position: center;   */
   padding: 20px;
 }
 
@@ -62,6 +66,7 @@ body {
 }
 
 header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,21 +74,21 @@ header {
   border-bottom: 2px solid #eee;
 }
 
-.left-icons,
-.right-icons {
+.left-icons, .right-icons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 .logo-wrapper {
-  display: flex;
-  justify-content: center;
-  flex: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.logo img {
+.center-logo {
   height: 50px;
+  object-fit: contain;
 }
 
 .user-profile {
@@ -131,10 +136,11 @@ header {
 }
 
 .courses-box {
+  background-color: white;
   border: 1px solid #aaa;
   border-radius: 16px;
   padding: 30px;
-  margin-top: 30px;
+  margin-top: 90px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -241,4 +247,10 @@ header {
 
 .footer-links a:hover {
   color: white;
+}
+
+.footer-illustration img {
+  max-width: 240px;
+  margin: 0 auto 16px;
+  display: block;
 }
